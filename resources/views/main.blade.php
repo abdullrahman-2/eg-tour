@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
 	<title>EgTour</title>
+
 </head>
 
 <body>
@@ -45,11 +46,11 @@
     <nav class="site-nav">
         <div class="container">
             <div class="site-navigation">
-                <a href="index.html" class="logo m-0">EgTour <span class="text-primary">.</span></a>
+                <a href="/" class="logo m-0">EgTour <span class="text-primary">.</span></a>
     
                 <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
                     <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/travels">trevels</a></li>
+                    <li><a href="/travels">travels</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact Us</a></li>
                 </ul>
@@ -70,7 +71,7 @@
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="widget">
-							<h3 class="heading">About Tour</h3>
+							<h3 class="heading">About EgTour</h3>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 						</div>
 						<div class="widget">
