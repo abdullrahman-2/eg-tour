@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Outer extends Migration
+class Tours extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class Outer extends Migration
      */
     public function up()
     {
-        Schema::create('outer', function (Blueprint $table){
-            $table->id();
-            $table->string('category');
-            $table->string('img_path');
-            $table->string('destination');
+        Schema::create('tours', function (Blueprint $table) {
+            $table->bigIncrements('tour_id');
+            $table->bigInteger('category_id')->index();
+            $table->string('name');
+            $table->text('img_path');
             $table->string('description');
-            $table->integer('price');
         });
     }
 
@@ -30,6 +29,6 @@ class Outer extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('outer');
+        Schema::dropIfExists('tours');
     }
 }

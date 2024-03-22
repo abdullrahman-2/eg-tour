@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Main extends Migration
+class TravelCategories extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class Main extends Migration
      */
     public function up()
     {
-        Schema::create('main', function (Blueprint $table){
-            $table->id();
-            $table->string('category');
+        Schema::create('travel_categories', function (Blueprint $table){
+            $table->bigIncrements('category_id');
+            $table->string('category_name');
             $table->string('description');
         });
     }
@@ -27,6 +27,6 @@ class Main extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('main');
+        Schema::dropIfExists('travel_categories');
     }
 }
