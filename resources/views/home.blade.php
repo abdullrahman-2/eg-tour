@@ -4,19 +4,6 @@
 
 
 
-<div class="hero">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="intro-wrap">
-                    <h1 class="mb-5"><span class="d-block">Enjoy Your</span> Trip  <span class="typed-words"></span></h1>
-
-                </div>
-            </div>
-          
-        </div>
-    </div>
-</div>
 
 
 <div class="untree_co-section">
