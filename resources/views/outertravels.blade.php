@@ -20,7 +20,7 @@
     }
 
     .place-cont {
-        height: 450px;
+        height: 500px;
         width: 350px;
         background-color: rgb(26, 55, 77);
         color: white;
@@ -28,18 +28,25 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
         border-radius: 20px;
         overflow: hidden;
     }
 
-    img {
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
+    p{
+        text-align: center;
+        margin: 0 8px 0 8px;
     }
 
-    button {
+    img {
+        width: 100%;
+        height: 65%;
+        object-fit: cover;
+        -webkit-mask-image: linear-gradient(#000, rgba(0,0,0,0));
+        mask-image: linear-gradient(#000, rgba(0,0,0,0));
+    }
+
+    .bu {
         height: 40px;
         width: 70%;
         background-color: white;
@@ -47,9 +54,12 @@
         border-radius: 40px !important;
         border: none;
         transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    button:hover {
+    .bu:hover {
         background: rgb(26, 55, 77);
         letter-spacing: 5px;
         transform: scale(1.1);
@@ -67,7 +77,7 @@
                 <div class="col-lg-6 mx-auto text-center">
                     <div class="intro-wrap">
                         <h1 class="mb-0">Travel section</h1>
-                        <p class="text-white">Where would you like to go? </p>
+                        <p class="text-white" style="margin-top: 20px;">Where would you like to go? </p>
                     </div>
                 </div>
             </div>
@@ -77,40 +87,40 @@
     <div class="cont2">
         <div class="places">
             <div class="place-cont">
-                <img src='images/hero-slider-1.jpg'>
-                <h1>Egypt</h1>
-                <p>Land of pyramids</p>
-                <button>Learn more</button>
+                <img src='images/hero-slider-1.jpg'>    <!-- Enter picture of country here -->
+                <h1>Egypt</h1>  <!-- Enter name of country here -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi delectus</p> <!-- Enter description of country here -->
+                <a href="" class="bu">Learn more</a> <!-- Enter link of page here -->
             </div>
             <div class="place-cont">
                 <img src="">
                 <h1></h1>
                 <p></p>
-                <button>Learn more</button>
+                <a href="" class="bu">Learn more</a>
             </div>
             <div class="place-cont">
                 <img src="">
                 <h1></h1>
                 <p></p>
-                <button>Learn more</button>
+                <a href="" class="bu">Learn more</a>
             </div>
             <div class="place-cont">
                 <img src="">
                 <h1></h1>
                 <p></p>
-                <button>Learn more</button>
+                <a href="" class="bu">Learn more</a>
             </div>
             <div class="place-cont">
                 <img src="">
                 <h1></h1>
                 <p></p>
-                <button>Learn more</button>
+                <a href="" class="bu">Learn more</a>
             </div>
             <div class="place-cont">
                 <img src="">
                 <h1></h1>
                 <p></p>
-                <button>Learn more</button>
+                <a href="" class="bu">Learn more</a>
             </div>
         </div>
     </div>
