@@ -18,7 +18,7 @@
 	<link rel="preconnect" href="{{asset('https://fonts.googleapis.com')}}">
 <link rel="preconnect" href="{{asset('https://fonts.gstatic.com')}}" crossorigin>
 <link href="{{asset('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap')}}" rel="stylesheet">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
@@ -62,7 +62,19 @@
             </div>
         </div>
     </nav>
-
+	<div class="hero">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7">
+					<div class="intro-wrap">
+						<h1 class="mb-5"><span class="d-block">Enjoy Your</span> Trip  <span class="typed-words"></span></h1>
+	
+					</div>
+				</div>
+			  
+			</div>
+		</div>
+	</div>
 	@yield('center')
 
 	<div class="site-footer">
@@ -184,7 +196,7 @@
     })
 		
 	</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<script src="{{asset('js/custom.js')}}"></script>
 
 </body>
