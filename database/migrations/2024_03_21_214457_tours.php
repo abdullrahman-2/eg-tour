@@ -14,7 +14,7 @@ class Tours extends Migration
     public function up()
     {
         Schema::create('tours', function (Blueprint $table) {
-            $table->bigIncrements('tour_id');
+            $table->bigInteger('tour_id')->primary();
             $table->bigInteger('category_id')->index();
             $table->string('name');
             $table->text('img_path');
