@@ -77,10 +77,10 @@
     <div class="cont2">
         <div class="places">
             <div class="place-cont">
-                <img src='images/hero-slider-1.jpg'>
-                <h1>Egypt</h1>
-                <p>Land of pyramids</p>
-                <button>Learn more</button>
+                <img src='images/hero-slider-1.jpg'>    <!-- Enter picture of country here -->
+                <h1>Egypt</h1>  <!-- Enter name of country here -->
+                <p>Land of pyramids</p> <!-- Enter description of country here -->
+                <button>Learn more</button> 
             </div>
             <div class="place-cont">
                 <img src="">
