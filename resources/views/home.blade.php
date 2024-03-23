@@ -9,7 +9,7 @@
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <div class="intro-wrap">
-                    <h1 class="mb-5"><span class="d-block">Let's Enjoy Your</span> Trip  <span class="typed-words"></span></h1>
+                    <h1 class="mb-5"><span class="d-block">Enjoy Your</span> Trip  <span class="typed-words"></span></h1>
 
                 </div>
             </div>
