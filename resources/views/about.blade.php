@@ -1,7 +1,7 @@
 @extends('main')
 @section('hero-content')
-<h1 class="mb-0">About Us</h1>
-<p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+<h1 class="mb-0">{{$items[0]->name}}</h1>
+<p class="text-white">{{$items[0]->description}}</p>
 @endsection
 @section('center')
 
@@ -9,35 +9,30 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <div class="owl-single dots-absolute owl-carousel">
-            <img src="images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-3.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-            <img src="images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
-          </div>
+          <img style="height: 24rem; object-fit:cover;" src='{{asset($items[0]->primary_img)}}' alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <!-- commented carousel till we decide to keep it or not with major vote -->
+          <!-- <div class="owl-single dots-absolute owl-carousel">
+            <img src="../../images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+            <img src="../../images/slider-3.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+            <img src="../../images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+            <img src="../../images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          </div> -->
         </div>
         <div class="col-lg-5 pl-lg-5 ml-auto">
-          <h2 class="section-title mb-4">About Tours</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <h2 class="section-title mb-4">{{$items[0]->name}}</h2>
+          <p>{{$items[0]->description}}</p>
           <ul class="list-unstyled two-col clearfix">
-            <li>Outdoor recreation activities</li>
-            <li>Airlines</li>
-            <li>Car Rentals</li>
-            <li>Cruise Lines</li>
-            <li>Hotels</li>
-            <li>Railways</li>
-            <li>Travel Insurance</li>
-            <li>Package Tours</li>
-            <li>Insurance</li>
-            <li>Guide Books</li>
+            <li>Price: {{$items[0]->price}}$</li>
+            <li>Duration: {{$items[0]->duration}} Hours</li>
           </ul>
+          <h5>Program:</h5>
+          <p>{{$items[0]->program}}</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="untree_co-section">
+  <!-- <div class="untree_co-section">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-6 text-center">
@@ -88,7 +83,7 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
 
 
 
