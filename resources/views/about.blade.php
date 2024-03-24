@@ -1,26 +1,10 @@
 @extends('main')
+@section('hero-content')
+<h1 class="mb-0">About Us</h1>
+<p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+@endsection
 @section('center')
-<body>
 
-
-  
-
-
-  <div class="hero hero-inner">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto text-center">
-          <div class="intro-wrap">
-            <h1 class="mb-0">About Us</h1>
-            <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  
   <div class="untree_co-section">
     <div class="container">
       <div class="row">
@@ -107,7 +91,7 @@
   </div>
 
 
-  
+
 
   <div class="untree_co-section testimonial-section mt-5">
     <div class="container">
@@ -187,12 +171,12 @@
 
           <p><a href="#" class="btn btn-primary">Get Started</a></p>
 
-          
+
         </div>
       </div>
     </div>
   </div>
-  
+
   <div class="py-5 cta-section">
     <div class="container">
       <div class="row text-center">
@@ -205,4 +189,4 @@
     </div>
   </div>
 
- @endsection
+  @endsection

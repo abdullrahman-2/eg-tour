@@ -1,5 +1,9 @@
 @extends("main")
 
+@section('hero-content')
+<h1>Travel with us!</h1>
+@endsection
+
 <style>
   .travels-card {
     width: 100%;
