@@ -42,8 +42,14 @@
         width: 100%;
         height: 65%;
         object-fit: cover;
-        -webkit-mask-image: linear-gradient(#000, rgba(0,0,0,0));
-        mask-image: linear-gradient(#000, rgba(0,0,0,0));
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+        transition: 1s;
+        border-radius: 20px;
+    }
+
+    img:hover{
+        height: 100%;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
     }
 
     .bu {
