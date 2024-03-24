@@ -1,17 +1,16 @@
 @extends('main')
+@section('active_nav')
+        <li><a href="/">Home</a></li>
+        <li><a href="/travels">travels</a></li>
+        <li class="active"><a href="/contact">Contact Us</a></li>
+@endsection
+@section('hero-content')
+    <h1>Contact Us</h1>
+@endsection
 @section('center')
-<div class="hero hero-inner">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto text-center">
-          <div class="intro-wrap">
-            <h1 class="mb-0">Contact Us</h1>
-            <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+
 
   
   

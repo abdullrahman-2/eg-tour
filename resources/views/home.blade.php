@@ -1,9 +1,28 @@
 @extends("main")
+@section('active_nav')
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/travels">travels</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+@endsection
+
+@section('hero-content')
+<h1 class="mb-5"><span class="d-block">Enjoy Your</span> Trip  <span class="typed-words"></span></h1>
+@endsection
+<!-- excluded for home page only -->
+<style>
+    .hero {
+        background: url(../images/pexels-max-ravier-2253821.jpg);
+    }
+    .hero:before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0 0 0 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+</style>
 
 @section('center')
-
-
-
 
 
 <div class="untree_co-section">

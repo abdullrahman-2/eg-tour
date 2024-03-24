@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +19,32 @@ Route::get('/', function () {
 });
 
 Route::get('/travels',function(){
-    return view('travels');
+    $items = DB::table('travel_categories')->get();
+
+    return view('travels', ['items' => $items]);
 });
 
-Route::get('/innertravels',function(){
-    return view('innertravels');
+Route::get('/tours/{cat_id}',function($cat_id){
+    $items = DB::table('tours')->where('category_id', $cat_id)->get();
+
+    $categoryName = DB::table('tours')
+    ->join('travel_categories', 'tours.category_id', '=', 'travel_categories.category_id')
+    ->where('tours.category_id', $cat_id)
+    ->select('tours.*', DB::raw('travel_categories.category_name'))
+    ->first();
+    
+    if ($categoryName) {
+        return view('tours', ['items' => $items, 'categoryName' => $categoryName]);
+    } else {
+        return view('errors.categoryNotFound');
+    }
+});
+
+Route::get('/tours/about/{tour_id}',function($tour_id){
+    $items = DB::table('tours_details')->where('tour_id', $tour_id)->get();
+
+    return view('about', ['items' => $items]);
+    
 });
 
 Route::get('/outertravels',function(){
