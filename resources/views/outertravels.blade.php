@@ -75,21 +75,6 @@
     }
 </style>
 
-<body>
-
-    <div class="hero hero-inner">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mx-auto text-center">
-                    <div class="intro-wrap">
-                        <h1 class="mb-0">Travel section</h1>
-                        <p class="text-white" style="margin-top: 20px;">Where would you like to go? </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="cont2">
         <div class="places">
             <div class="place-cont">
@@ -131,5 +116,4 @@
         </div>
     </div>
 
-
-</body>
+@endsection
