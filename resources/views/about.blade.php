@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <img style="height: 24rem; object-fit:cover;" src='{{asset($items[0]->primary_img)}}' alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img style="height: 24rem; width: 600px; object-fit:cover;" src='{{asset($items[0]->primary_img)}}' alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
           <!-- commented carousel till we decide to keep it or not with major vote -->
           <!-- <div class="owl-single dots-absolute owl-carousel">
             <img src="../../images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
