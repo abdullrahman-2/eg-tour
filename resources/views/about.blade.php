@@ -1,7 +1,7 @@
 @extends('main')
 @section('hero-content')
-<h1 class="mb-0">About Us</h1>
-<p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+<h1 class="mb-0">{{$items[0]->name}}</h1>
+<p class="text-white">{{$items[0]->description}}</p>
 @endsection
 @section('center')
 
@@ -18,8 +18,8 @@
           </div>
         </div>
         <div class="col-lg-5 pl-lg-5 ml-auto">
-          <h2 class="section-title mb-4">About Tours</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <h2 class="section-title mb-4">{{$items[0]->name}}</h2>
+          <p>{{$items[0]->description}}</p>
           <ul class="list-unstyled two-col clearfix">
             <li>Outdoor recreation activities</li>
             <li>Airlines</li>

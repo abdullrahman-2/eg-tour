@@ -1,4 +1,18 @@
 @extends('main')
+
+@section('hero-content')
+    <h1>{{$categoryName->category_name}}</h1>
+    <style>
+        .intro-wrap h1{
+            text-align: center;
+            position: absolute;
+            top: -50%;
+            transform: translate(50%, 50%);
+            font-size: 100px;
+        }
+    </style>
+@endsection
+
 @section('center')
 
 <style>
@@ -77,42 +91,17 @@
 
     <div class="cont2">
         <div class="places">
-            <div class="place-cont">
-                <img src='images/hero-slider-1.jpg'>    <!-- Enter picture of country here -->
-                <h1>Egypt</h1>  <!-- Enter name of country here -->
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi delectus</p> <!-- Enter description of country here -->
-                <a href="" class="bu">Learn more</a> <!-- Enter link of page here -->
-            </div>
-            <div class="place-cont">
-                <img src="">
-                <h1></h1>
-                <p></p>
-                <a href="" class="bu">Learn more</a>
-            </div>
-            <div class="place-cont">
-                <img src="">
-                <h1></h1>
-                <p></p>
-                <a href="" class="bu">Learn more</a>
-            </div>
-            <div class="place-cont">
-                <img src="">
-                <h1></h1>
-                <p></p>
-                <a href="" class="bu">Learn more</a>
-            </div>
-            <div class="place-cont">
-                <img src="">
-                <h1></h1>
-                <p></p>
-                <a href="" class="bu">Learn more</a>
-            </div>
-            <div class="place-cont">
-                <img src="">
-                <h1></h1>
-                <p></p>
-                <a href="" class="bu">Learn more</a>
-            </div>
+
+            @foreach($items as $item)
+                <div class="place-cont">
+                    <img src='{{asset( $item->img_path )}}'>    <!-- Enter picture of country here -->
+                    <h1>{{$item->name}}</h1>  <!-- Enter name of country here -->
+                    <p>{{$item->description}}</p> <!-- Enter description of country here -->
+                    <a href="{{"about/".$item->tour_id}}" class="bu">Learn more</a> <!-- Enter link of page here -->
+                </div>
+            
+            @endforeach
+            
         </div>
     </div>
 

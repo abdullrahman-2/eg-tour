@@ -1,7 +1,7 @@
 @extends("main")
 
 @section('hero-content')
-<h1>Travel with us!</h1>
+  <h1>Travel with us!</h1>
 @endsection
 
 <style>
@@ -68,8 +68,8 @@
 
     </div>
     <div class="title">
-      <h1>Inner Travels</h1>
-      <a class="btn btn-secondary" href="innertravels">Discover</a>
+      <h1>{{$items[0]->category_name}}</h1>
+      <a class="btn btn-secondary" href="tours/{{$items[0]->category_id}}">Discover</a>
     </div>
   </div>
 
@@ -87,8 +87,8 @@
 
     </div>
     <div class="title">
-      <h1>Outer Travels</h1>
-      <a class="btn btn-secondary" href="outertravels">Discover</a>
+      <h1>{{$items[1]->category_name}}</h1>
+      <a class="btn btn-secondary" href="tours/{{$items[1]->category_id}}">Discover</a>
     </div>
   </div>
 
