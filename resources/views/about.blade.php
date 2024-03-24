@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <img style="height: 24rem; width: 600px; object-fit:cover;" src='{{asset($items[0]->primary_img)}}' alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+          <img style="height: 700px; width: 550px; object-fit:cover;" src='{{asset($items[0]->primary_img)}}' alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
           <!-- commented carousel till we decide to keep it or not with major vote -->
           <!-- <div class="owl-single dots-absolute owl-carousel">
             <img src="../../images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
@@ -18,12 +18,12 @@
             <img src="../../images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
           </div> -->
         </div>
-        <div class="col-lg-5 pl-lg-5 ml-auto">
+        <div class="col-lg-5 pl-lg-5 ml-auto my-auto">
           <h2 class="section-title mb-4">{{$items[0]->name}}</h2>
           <p>{{$items[0]->description}}</p>
           <ul class="list-unstyled two-col clearfix">
-            <li>Price: {{$items[0]->price}}$</li>
-            <li>Duration: {{$items[0]->duration}} Hours</li>
+            <li><h5>Price: {{$items[0]->price}}$</h5></li>
+            <li><h5>Duration: {{$items[0]->duration}} Hours</h5></li>
           </ul>
           <h5>Program:</h5>
           <p>{{$items[0]->program}}</p>

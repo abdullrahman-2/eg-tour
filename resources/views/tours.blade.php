@@ -47,6 +47,10 @@
         overflow: hidden;
     }
 
+    .place-cont p{
+        padding-inline: 1rem;
+    }
+
     p{
         text-align: center;
         margin: 0 8px 0 8px;
@@ -77,6 +81,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 1rem;
     }
 
     .bu:hover {
@@ -94,10 +99,10 @@
 
             @foreach($items as $item)
                 <div class="place-cont">
-                    <img src='{{asset( $item->img_path )}}'>    <!-- Enter picture of country here -->
+                    <img src='{{asset($item->img_path)}}'>    <!-- Enter picture of country here -->
                     <h1>{{$item->name}}</h1>  <!-- Enter name of country here -->
                     <p>{{$item->description}}</p> <!-- Enter description of country here -->
-                    <a href="{{"about/".$item->tour_id}}" class="bu">Learn more</a> <!-- Enter link of page here -->
+                    <a href="{{"about/" . $item->tour_id}}" class="bu">Learn more</a> <!-- Enter link of page here -->
                 </div>
             
             @endforeach
