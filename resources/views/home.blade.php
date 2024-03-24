@@ -1,4 +1,9 @@
 @extends("main")
+@section('active_nav')
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/travels">travels</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+@endsection
 
 @section('hero-content')
 <h1 class="mb-5"><span class="d-block">Enjoy Your</span> Trip  <span class="typed-words"></span></h1>

@@ -1,5 +1,11 @@
 @extends("main")
 
+@section('active_nav')
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/travels">travels</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+@endsection
+
 @section('hero-content')
   <h1>Travel with us!</h1>
 @endsection
