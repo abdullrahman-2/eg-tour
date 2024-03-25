@@ -14,8 +14,10 @@ class Tours extends Migration
     public function up()
     {
         Schema::create('tours', function (Blueprint $table) {
+            $table->engine='InnoDB';
             $table->bigInteger('tour_id')->primary();
             $table->bigInteger('category_id')->index();
+            $table->foreign('category_id')->references('category_id')->on('travel_categories');
             $table->string('name');
             $table->text('img_path');
             $table->string('description');

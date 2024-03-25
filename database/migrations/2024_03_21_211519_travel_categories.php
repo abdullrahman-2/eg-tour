@@ -14,6 +14,7 @@ class TravelCategories extends Migration
     public function up()
     {
         Schema::create('travel_categories', function (Blueprint $table){
+            $table->engine='InnoDB';
             $table->bigInteger('category_id')->primary();
             $table->string('category_name');
             $table->string('description');

@@ -14,7 +14,9 @@ class ToursDetails extends Migration
     public function up()
     {
         Schema::create('tours_details', function (Blueprint $table){
+            $table->engine='InnoDB';
             $table->bigInteger('tour_id')->index();
+            $table->foreign('tour_id')->references('tour_id')->on('tours');
             $table->string('name');
             $table->string('description');
             $table->integer('duration');
